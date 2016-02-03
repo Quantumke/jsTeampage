@@ -1,0 +1,72 @@
+
+
+
+#con_menu{
+    position:fixed;
+    left:32px;
+    top:32px;
+    z-index: 30000;
+}
+#con_buttons{
+	position:fixed;
+	left:96px;top:32px;
+	-webkit-transition:-webkit-transform .2s ease,opacity .2s ease;transition:transform .2s ease,opacity .2s ease;
+      z-index: 30000;
+	}
+	#nav_logo{
+		position:fixed;
+		left:96px;
+		width:160px;
+		height:32px;
+		fill:#E6E6EC;
+		-webkit-transition:-webkit-transform .2s ease,opacity .2s ease;transition:transform .2s ease,opacity .2s ease
+		}
+		#nav_menu{
+			float:left;
+			width:32px;
+			height:32px
+			}
+			#nav_contact,#nav_home,#nav_lang,#nav_work{
+				float:left;
+				width:32px;
+				height:32px;
+				margin-right:32px
+			}
+			#txt_nav_contact,#txt_nav_home,#txt_nav_lang,#txt_nav_work{
+				float:left;
+				max-width:0;
+				overflow:hidden;
+				margin-right:0;
+				font-size:16px;
+				line-height:36px;
+				white-space:nowrap;
+				cursor:default;
+				-webkit-transition:max-width .2s ease,margin-right .2s ease;transition:max-width .2s ease,margin-right .2s ease
+				}
+				#nav_contact:hover+#txt_nav_contact,#nav_home:hover+#txt_nav_home,#nav_lang:hover+#txt_nav_lang,#nav_work:hover+#txt_nav_work{
+					max-width:126px;
+					margin-right:32px
+					}
+					.navbut:hover path{
+						fill:#14A03C
+						}
+						.navbut path{
+							fill:#E6E6EC;
+							-webkit-transition:fill .1s linear,opacity .1s linear;transition:fill .1s linear,opacity .1s linear
+							}
+							.navigation_hidden{
+								opacity:0;
+								filter:alpha(opacity=0);
+								-webkit-transform:translateX(64px);
+								-ms-transform:translateX(64px);
+								transform:translateX(64px);pointer-events:none
+								}
+								.navigation_visible{
+									opacity:1;
+									filter:alpha(opacity=100);
+									-webkit-transform:translateX(0);
+									-ms-transform:translateX(0);
+									transform:translateX(0);pointer-events:all
+								}
+
+			
